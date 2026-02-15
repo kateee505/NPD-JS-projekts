@@ -1,21 +1,20 @@
 # NPD-JS-projekts
-# Produkta rezervācijas sistēma
+# Velosipēdu noma
 
-## Projekta apraksts
-Šī ir interaktīva mājaslapa, kas ļauj lietotājam izvēlēties produktu un ievadīt daudzumu, lai aprēķinātu kopējo cenu.
+Šī ir interaktīva mājaslapa, kas ļauj lietotājam aprēķināt velosipēda nomas cenu. Lietotājs var izvēlēties velosipēda veidu un nomas dienu skaitu.
 
 ## Funkcionalitāte
-- Lietotājs izvēlas produktu no saraksta
-- Ievada daudzumu
-- JavaScript nolasa datus
-- Notiek validācija
-- Aprēķina cenu
-- Tiek piemērota 10% atlaide, ja daudzums ir 5 vai vairāk
-- Rezultāts tiek attēlots bez lapas pārlādes
-- 
+- Velosipēdu veidu izvēle.
+- Dienu skaita ievade.
+- Datu validācija.
+- Automātisks cenas aprēķins.
+- 15% atlaide, ja noma ir 7 vai vairāk dienas.
+- Dinamisks rezultāta attēlojums bez lapas pārlādes.
+
 ## Lietošanas instrukcija
-1. Atveriet mājaslapu
-2. Izvēlējiet produktu
-3. Ievadiet daudzumu
-4. Nospiediet pogu "Aprēķināt"
+1. Atveriet mājaslapu.
+2. Izvēlējiet velosipēdu.
+3. Ievadiet dienu skaitu.
+4. Spiediet "Aprēķināt cenu".
+
 
