@@ -2,27 +2,27 @@
 <html lang="lv">
 <head>
     <meta charset="UTF-8">
-    <title>Produkta rezervācija</title>
+    <title>Velosipēdu noma</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>Produkta rezervācijas sistēma</h1>
+<h1>Velosipēdu noma</h1>
 
-<p>Izvēlies produktu un ievadi daudzumu, lai aprēķinātu kopējo cenu.</p>
+<p>Izvēlies velosipēda veidu un nomas dienu skaitu, lai aprēķinātu cenu.</p>
 
-<div class="form-container">
-    <label for="product">Produkts:</label>
-    <select id="product">
-        <option value="10">Grāmata - 10€</option>
-        <option value="20">Austiņas - 20€</option>
-        <option value="50">Kursors - 50€</option>
+<div class="container">
+    <label for="bikeType">Velosipēda veids:</label>
+    <select id="bikeType">
+        <option value="10">Pilsētas velo – 10€ / dienā</option>
+        <option value="15">Kalnu velo – 15€ / dienā</option>
+        <option value="20">Elektriskais velo – 20€ / dienā</option>
     </select>
 
-    <label for="quantity">Daudzums:</label>
-    <input type="number" id="quantity" placeholder="Ievadi daudzumu">
+    <label for="days">Nomas dienas:</label>
+    <input type="number" id="days" placeholder="Ievadi dienu skaitu">
 
-    <button id="calculateBtn">Aprēķināt</button>
+    <button id="rentBtn">Aprēķināt cenu</button>
 </div>
 
 <div id="result"></div>
