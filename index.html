@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <title>Produkta rezervācija</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Produkta rezervācijas sistēma</h1>
+
+<p>Izvēlies produktu un ievadi daudzumu, lai aprēķinātu kopējo cenu.</p>
+
+<div class="form-container">
+    <label for="product">Produkts:</label>
+    <select id="product">
+        <option value="10">Grāmata - 10€</option>
+        <option value="20">Austiņas - 20€</option>
+        <option value="50">Kursors - 50€</option>
+    </select>
+
+    <label for="quantity">Daudzums:</label>
+    <input type="number" id="quantity" placeholder="Ievadi daudzumu">
+
+    <button id="calculateBtn">Aprēķināt</button>
+</div>
+
+<div id="result"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
