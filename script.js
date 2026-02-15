@@ -1,24 +1,24 @@
-document.getElementById("calculateBtn").addEventListener("click", calculatePrice);
+document.getElementById("rentBtn").addEventListener("click", calculateRent);
 
-function calculatePrice() {
-    const productPrice = document.getElementById("product").value;
-    const quantity = document.getElementById("quantity").value;
+function calculateRent() {
+    const bikePrice = document.getElementById("bikeType").value;
+    const days = document.getElementById("days").value;
     const result = document.getElementById("result");
 
-    // Validācija
-    if (quantity === "" || quantity <= 0) {
-        result.innerHTML = "Lūdzu ievadi pareizu daudzumu!";
+    // Datu validācija
+    if (days === "" || days <= 0) {
+        result.innerHTML = "Lūdzu ievadi derīgu dienu skaitu!";
         result.style.color = "red";
         return;
     }
 
-    let total = productPrice * quantity;
+    let total = bikePrice * days;
 
-    // Atlaides nosacījums
-    if (quantity >= 5) {
-        total *= 0.9;
+    // Atlaide ilgtermiņa nomai
+    if (days >= 7) {
+        total *= 0.85; // 15% atlaide
     }
 
-    result.innerHTML = `Kopējā cena: ${total} €`;
+    result.innerHTML = `Kopējā nomas cena: ${total} €`;
     result.style.color = "green";
 }
